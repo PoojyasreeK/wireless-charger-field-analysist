@@ -19,6 +19,7 @@
 
 #how the code works
 
+
 # it involves numpy, matplotlib, scipy.optimise - for numerical computation, data visualisation of B vs D while scipy.optimise ideally, is for finding a curve that fits the data best.
 
 #then we deliberately define a model which follows 1 /r **3 to see if the aquired data follows this.
