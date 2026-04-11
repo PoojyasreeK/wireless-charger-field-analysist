@@ -18,8 +18,15 @@
 
 
 #how the code works
+# it involves numpy, matplotlib, scipy.optimise - for numerical computation, data visualisation of B vs D while scipy.optimise ideally, is for finding a curve that fits the data best.
 
+#then we deliberately define a model which follows 1 /r **3 to see if the aquired data follows this.
 
+#.append is used to build the dataset step by step it adds elements to the list, in this case (B,r)
+
+#return params[0] returns the value of A (after adjusting the constant) 
+
+#plt.legend makes the graph interpretable
 
 import numpy as np
 import matplotlib.pyplot as plt
