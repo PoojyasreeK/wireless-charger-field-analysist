@@ -1,12 +1,15 @@
 # WIRELESS-CHARGER-FIELD-ANALYSIS
 
 ## HARDWARE
+
 wireless charger that my team and I built using IC 555 chip for AC voltage generation from DC
 
 ## PURPOSE
-verifies the dipole behaviour of magnetic field at close distances at primary coil of the wireless charger
+
+Tests whether magnetic field follows dipole behavior (1/r³) at the primary coil. Close-range deviations are expected and observed
 
 ## DATA (Dist vs B)
+
 (1,72)
 (7,68)
 (13,62)
@@ -22,16 +25,15 @@ verifies the dipole behaviour of magnetic field at close distances at primary co
 
 ## HOW THE CODE WORKS
 
-
 it involves numpy, matplotlib, scipy.optimise - for numerical computation, data visualisation of B vs D while scipy.optimise ideally, is for finding a curve that fits the data best.
 
-#then we deliberately define a model which follows 1 /r **3 to see if the aquired data follows this.
+then we deliberately define a model which follows 1 /r **3 to see if the aquired data follows this.
 
-#.append is used to build the dataset step by step it adds elements to the list, in this case (B,r)
+.append is used to build the dataset step by step it adds elements to the list, in this case (B,r)
 
-#return params[0] returns the value of A (after adjusting the constant) 
+return params[0] returns the value of A (after adjusting the constant) 
 
-#plt.legend makes the graph interpretable
+plt.legend makes the graph interpretable
 
 import numpy as np
 import matplotlib.pyplot as plt
