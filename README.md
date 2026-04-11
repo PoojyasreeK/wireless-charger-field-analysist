@@ -20,7 +20,7 @@ verifies the dipole behaviour of magnetic field at close distances at primary co
 
 
 
-# HOW THE CODE WORKS
+## HOW THE CODE WORKS
 
 
 it involves numpy, matplotlib, scipy.optimise - for numerical computation, data visualisation of B vs D while scipy.optimise ideally, is for finding a curve that fits the data best.
