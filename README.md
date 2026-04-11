@@ -1,9 +1,12 @@
-# wireless-charger-field-analysis
+# WIRELESS-CHARGER-FIELD-ANALYSIS
 
-#this part of project plots plots B vs distance data at the the primary coil of the wireless charger that my team and I built using IC 555 chip for AC voltage generation
-#verifies the dipole behaviour of magnetic field at close distances
-#this indicates the proper operation of all the chosen components in circuit.
-#aquired data points Dist vs B
+## HARDWARE
+wireless charger that my team and I built using IC 555 chip for AC voltage generation from DC
+
+## PURPOSE
+verifies the dipole behaviour of magnetic field at close distances at primary coil of the wireless charger
+
+## DATA (Dist vs B)
 (1,72)
 (7,68)
 (13,62)
@@ -17,10 +20,10 @@
 
 
 
-#how the code works
+# HOW THE CODE WORKS
 
 
-# it involves numpy, matplotlib, scipy.optimise - for numerical computation, data visualisation of B vs D while scipy.optimise ideally, is for finding a curve that fits the data best.
+it involves numpy, matplotlib, scipy.optimise - for numerical computation, data visualisation of B vs D while scipy.optimise ideally, is for finding a curve that fits the data best.
 
 #then we deliberately define a model which follows 1 /r **3 to see if the aquired data follows this.
 
